@@ -300,8 +300,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     #nav.nav-transparent .navbar-brand .logo {
         display: block !important;
-        max-width: 50px;
-        max-height: 50px;
+        max-width: 52px;
+        max-height: 52px;
     }
 }
 
@@ -347,7 +347,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 @media only screen and (min-width: 768px) {
     .main-nav li {
-        padding: 0px 15px;
+        padding: 0px 15px 10px;
     }
     .main-nav li a {
         font-size: 14px;
