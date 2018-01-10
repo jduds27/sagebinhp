@@ -1,8 +1,6 @@
 @import "font-awesome";
 
 /*
-Theme Name:
-Author: yaminncco
 
 Colors:
 	Body 		  : #868F9B
@@ -10,8 +8,6 @@ Colors:
 	Primary 	: #6195FF
 	Dark      : #FCFCFF
 	Grey 		  : #F4F4F4 #FAFAFA #EEE
-
-Fonts: Montserrat Varela Round
 
 Table OF Contents
 ------------------------------------
@@ -287,7 +283,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 #nav:not(.nav-transparent):not(.fixed-nav) .navbar-brand .logo-alt {
-	display: none;
+    display: none;
 }
 
 #nav.nav-transparent:not(.fixed-nav) .navbar-brand .logo {
@@ -640,6 +636,11 @@ header {
 
 .breadcrumb>li+li:before {
     color: #868F9B;
+}
+
+.white-text-sub {
+    color: white;
+    font-size: 1.2em;
 }
 
 

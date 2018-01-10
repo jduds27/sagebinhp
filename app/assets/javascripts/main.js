@@ -79,3 +79,4 @@ function lightbox_close() {
 	document.getElementById('fade').style.display = 'none';
 	lightBoxVideo.pause();
 }
+

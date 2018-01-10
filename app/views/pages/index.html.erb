@@ -25,6 +25,8 @@
 
 
 
+
+
 </head>
 
 <body>
@@ -40,15 +42,19 @@
 
 		<!-- /Background Image -->
 
+<%# test %>
+
+<%#  test %>
+
 		<!-- Nav -->
-		<nav id="nav" class="navbar-collapse navbar nav-transparent">
+		<nav id="nav" class="navbar nav-transparent">
 			<div class="container">
 
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
 						<a href="#home">
-              <%= image_tag('Sagebin.png', :class => "logo", :size => '50x50') %>
+              <%= image_tag('Sagebin.png', :class => "logo", :size => '65x65') %>
               <%= image_tag('Sagebin-white.png', :class => "logo-alt", :size => '80x80') %>
 						</a>
 					</div>
@@ -56,17 +62,13 @@
 
 					<!-- Collapse nav button -->
 					<div class="nav-collapse ">
-						<span>	<ul class="dropdownB" >
-					<li><a href="#about" >About</a></li>				
-					<li><a href="#pricing" >Prices</a></li>					
-					<li><a href="https://www.sagebin.com/">Login</a></li>
-				</ul></span>
+						<span></span>
 					</div>
 					<!-- /Collapse nav button -->
 				</div>
 
 				<!--  Main navigation  -->
-				<ul class="main-nav  navbar-nav navbar-right">
+				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#about" >About</a></li>				
 					<li><a href="#pricing" >Prices</a></li>					
 					<li><a href="https://www.sagebin.com/">Login</a></li>
@@ -86,7 +88,7 @@
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
 							<h1 class="white-text">Sagebin</h1>
-							<p class="white-text">All your movies. Anywhere you are. All the time.
+							<p class="white-text-sub">All your movies. Anywhere you are. All the time.
 							</p>
 							<a class="white-btn" href="https://www.sagebin.com/membership-account/membership-levels/">SignUp!</button>
 					<a class="main-btn" href="JavaScript:html5Lightbox.showLightbox(3, 'https://www.youtube.com/watch?v=agFPu8nxaic', 'YouTube lightbox');">Learn More</a>
@@ -350,6 +352,10 @@
 		$('html, body').animate({
 			scrollTop: $(this.hash).offset().top
 		}, 1500);
+	});
+
+		$('#nav .nav-collapse').on('click', function () {
+		$('#nav').toggleClass('open');
 	});
 </script>
 
