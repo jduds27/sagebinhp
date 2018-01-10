@@ -10,7 +10,7 @@
 	<title>HTML Template</title>
 
 	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cuprum:700|Kanit" rel="stylesheet">
 
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -83,7 +83,7 @@
 							<h1 class="white-text">Sagebin</h1>
 							<p class="white-text">All your movies. Anywhere you are. All the time.
 							</p>
-							<button class="white-btn">Get Started!</button>
+							<a class="white-btn" href="https://www.sagebin.com/membership-account/membership-levels/">SignUp!</button>
 					<a class="main-btn" href="JavaScript:html5Lightbox.showLightbox(3, 'https://www.youtube.com/watch?v=agFPu8nxaic', 'YouTube lightbox');">Learn More</a>
 						</div>
 					</div>
@@ -121,7 +121,7 @@
 						<i class="fa fa-archive"></i>
 						<h3>We Send You A Box</h3>
 						<p>We'll send you a box with DVD spindles and instructions, so you can set your DVD's free!</p>
-						<a href="#">Read more</a>
+						
 					</div>
 				</div>
 				<!-- /about -->
@@ -132,7 +132,7 @@
 						<i class="fa fa-dot-circle-o"></i>
 						<h3>Send In Your Discs</h3>
 						<p>No more scratched up DVD's or messy entertainment center. Everything in the cloud.</p>
-						<a href="#">Read more</a>
+					
 					</div>
 				</div>
 				<!-- /about -->
@@ -143,7 +143,7 @@
 						<i class="fa fa-mobile"></i>
 						<h3>Watch Anywhere</h3>
 						<p>Watch anywhere you have an internet connection, and cache for offline viewing when you don't.</p>
-						<a href="#">Read more</a>
+						
 					</div>
 				</div>
 				<!-- /about -->
@@ -170,7 +170,7 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">Membership</h2>
+					<h2 class="p-title">Membership</h2>
 				</div>
 				<!-- /Section header -->
 
@@ -280,7 +280,7 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="/"><%= image_tag('Sagebin-white.png', :class => "logo", :size => '50x50') %></a>
+						<a href="#home"><%= image_tag('Sagebin-white.png', :class => "logo", :size => '50x50') %></a>
 					</div>
 					<!-- /footer logo -->
 
@@ -312,11 +312,7 @@
 	</footer>
 	<!-- /Footer -->
 
-	<!-- Back to top -->
-	<div id="back-to-top"></div>
-	<!-- /Back to top -->
-
-	<%# <!-- Preloader -->
+	<!-- Preloader -->
 	<div id="preloader">
 		<div class="preloader">
 			<span></span>
@@ -325,7 +321,7 @@
 			<span></span>
 		</div>
 	</div>
-	<!-- /Preloader --> %>
+	<!-- /Preloader -->
 <script>
 	$("#nav .main-nav a[href^='#']").on('click', function (e) {
 		e.preventDefault();
@@ -334,7 +330,24 @@
 			scrollTop: $(this.hash).offset().top
 		}, 1500);
 	});
+
+		$("#nav .navbar-brand a[href^='#']").on('click', function (e) {
+		e.preventDefault();
+		var hash = this.hash;
+		$('html, body').animate({
+			scrollTop: $(this.hash).offset().top
+		}, 1500);
+	});
+
+			$("#footer .footer-logo a[href^='#']").on('click', function (e) {
+		e.preventDefault();
+		var hash = this.hash;
+		$('html, body').animate({
+			scrollTop: $(this.hash).offset().top
+		}, 1500);
+	});
 </script>
+
 
 
 

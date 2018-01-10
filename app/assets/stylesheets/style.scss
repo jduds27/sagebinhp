@@ -52,7 +52,7 @@ Table OF Contents
 /* -- typography -- */
 
 body {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
@@ -60,7 +60,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cuprum', sans-serif;
     font-weight: 700;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -169,7 +169,7 @@ ul, ol {
     background-attachment: fixed;
     max-height: 643;
     background-image: url('devices.jpg');
-   
+    background-size: cover;
 }
 
 .bg-img .overlay {
@@ -269,6 +269,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .main-btn:hover, .white-btn:hover, .outline-btn:hover {
     opacity: 0.8;
+    color: black;
 }
 
 
@@ -983,6 +984,9 @@ header {
     padding-bottom: 40px;
 }
 
+.p-title {
+    color: white;
+}
 
 /* -- category sidebar -- */
 
@@ -1157,6 +1161,10 @@ header {
   .section-header h2.title {
   		font-size:31.5px;
 	}
+    .section-header h2.title {
+        font-size:31.5px;
+       
+  }
 
   .main-btn , .default-btn , .outline-btn , .white-btn  {
   		padding: 8px 22px;
@@ -1290,36 +1298,7 @@ header {
 }
 
 
-/*------------------------------------*\
-	Back to top
-\*------------------------------------*/
 
-#back-to-top {
-  	display:none;
-  	position: fixed;
-  	bottom: 20px;
-  	right: 20px;
-  	width: 50px;
-  	height: 50px;
-  	line-height: 50px;
-  	text-align: center;
-  	background: #6195FF;
-  	border-radius:3px;
-  	color: #FFF;
-  	z-index: 9999;
-    -webkit-transition: 0.2s opacity;
-    transition: 0.2s opacity;
-  	cursor: pointer;
-}
-
-#back-to-top:after {
-    content: "\f106";
-    font-family: 'FontAwesome';
-}
-
-#back-to-top:hover {
-    opacity: 0.8;
-}
 
 /*------------------------------------*\
 	Preloader
