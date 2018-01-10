@@ -300,6 +300,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     #nav.nav-transparent .navbar-brand .logo {
         display: block !important;
+        max-width: 50px;
+        max-height: 50px;
     }
 }
 
